@@ -1,3 +1,4 @@
+<%@page import="dog_shopping_proj.ds.JndiDS"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -7,6 +8,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-gdgd
+<%=JndiDS.getConnection() %>
 </body>
 </html>
