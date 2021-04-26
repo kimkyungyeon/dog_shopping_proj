@@ -24,7 +24,7 @@
 
 <error-page>
 	<exception-type>java.lang.NullPointerException</exception-type>
-	<location>/error/null.jsp</location>
+	<location>/error/nullAction.jsp</location>
 </error-page>
 
 </web-app>
