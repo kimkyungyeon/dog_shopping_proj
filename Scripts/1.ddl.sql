@@ -9,15 +9,15 @@ CREATE SCHEMA dog_shopping;
 
 -- Dog
 CREATE TABLE dog_shopping.Dog (
-	id        INT          NOT NULL COMMENT '아이디', -- 아이디
-	kind      VARCHAR(12)  NOT NULL COMMENT '품종', -- 품종
-	price     INT          NOT NULL COMMENT '가격', -- 가격
-	image     VARCHAR(20)  NOT NULL COMMENT '이미지', -- 이미지
-	country   VARCHAR(12)  NOT NULL COMMENT '원산지', -- 원산지
-	height    INT          NULL     COMMENT '평균신장', -- 평균신장
-	weight    INT          NULL     COMMENT '평균체중', -- 평균체중
-	content   VARCHAR(400) NULL     COMMENT '설명', -- 설명
-	readcount INT          NULL     COMMENT '조회수' -- 조회수
+	id        INT          NOT NULL 		  COMMENT '아이디', -- 아이디
+	kind      VARCHAR(12)  NOT null unique    COMMENT '품종', -- 품종
+	price     INT          NOT null			  COMMENT '가격', -- 가격
+	image     VARCHAR(20)  NOT null			  COMMENT '이미지', -- 이미지
+	country   VARCHAR(12)  NOT NULL 		  COMMENT '원산지', -- 원산지
+	height    INT          NULL    			  COMMENT '평균신장', -- 평균신장
+	weight    INT          NULL    			  COMMENT '평균체중', -- 평균체중
+	content   VARCHAR(400) NULL     		  COMMENT '설명', -- 설명
+	readcount INT          NULL     default 0 COMMENT '조회수' -- 조회수
 )
 COMMENT 'Dog';
 

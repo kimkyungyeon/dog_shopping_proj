@@ -14,6 +14,32 @@ public class Dog {
 		// TODO Auto-generated constructor stub
 	}
 	
+	public Dog(String kind, int price, String image, String country, int height, int weight, String content) {
+		super();
+		this.kind = kind;
+		this.price = price;
+		this.image = image;
+		this.country = country;
+		this.height = height;
+		this.weight = weight;
+		this.content = content;
+	}
+
+	public Dog(String kind, int price, String image, String country, int height, int weight, String content,
+			int readCount) {
+		super();
+		this.kind = kind;
+		this.price = price;
+		this.image = image;
+		this.country = country;
+		this.height = height;
+		this.weight = weight;
+		this.content = content;
+		this.readCount = readCount;
+	}
+
+
+
 	public Dog(int id, String kind, int price, String image, String country, int height, int weight, String content,
 			int readCount) {
 		super();
